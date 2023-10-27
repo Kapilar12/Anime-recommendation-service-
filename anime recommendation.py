@@ -18,7 +18,7 @@ rcmd_animes = np.unique(rcmd_animes)
     
 for i in rcmd_animes:
     print(i)
-anime_genres_split = df[df['name'] == anime].iloc[0]['genre'].split('|')
+anime_genres_split = df[df['name'] == anime].iloc[0]['genre'].split(',')
 scores = {}
 
 for i in rcmd_animes:
